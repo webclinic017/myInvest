@@ -1,7 +1,7 @@
 import pymysql
 import pandas as pd
 
-conn = pymysql.connect(host='localhost', port=3306, db='naverstock', user='root', passwd='2543', charset='utf8')
+conn = pymysql.connect(host='localhost', port=3306, db='stockdb', user='root', passwd='2543', charset='utf8')
 curs = conn.cursor()
 
 sql = "SELECT * FROM company_info"

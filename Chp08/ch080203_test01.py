@@ -11,5 +11,4 @@ print("IsConnect : ", cpStatus.IsConnect)
 print("ServerType : ", cpStatus.ServerType)
 print("LimitRequestRemainTime : ", cpStatus.LimitRequestRemainTime)
 
-
 print("TradeInit : ", cpTradeUtil.TradeInit(0))

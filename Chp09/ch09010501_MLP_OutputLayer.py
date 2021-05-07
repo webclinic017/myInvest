@@ -1,4 +1,4 @@
-# cch09010501_MLP_HiddenLayer.py
+# ch09010501_MLP_OutputLayer.py
 
 import numpy as np
 X = np.array([10, 20])  # ①
@@ -11,5 +11,11 @@ def sigmoid(x):
 A1 = np.dot(X, W1) + B1
 Z1 = sigmoid(A1)
 
-print('A1 :', A1)
-print('Z1 :', Z1)
+W2 = np.array([[0.1, 0.4], [0.2, 0.5], [0.3, 0.6]])
+B2 = np.array([0.1, 0.2])
+
+A2 = np.dot(Z1, W2) + B2
+Y = sigmoid(A2)
+
+print('A2 :', A2)
+print('Y :', Y)
